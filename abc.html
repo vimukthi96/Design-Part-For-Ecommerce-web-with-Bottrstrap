@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color:white;
+      font-variant-position: center;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+   .grey-box
+            {
+       background-color:gray;
+       height: 270px;
+       width: 200px;
+       font-size: 2en;
+       text-align: center;
+       padding: 10px;
+       margin-bottom: 10px;
+       margin-right: 20px;
+      } 
+   a{
+    color:black;
+    text-align: center;
+   }  
+   label{
+    color: black;
+    text-align: center;
+   }       
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Logo</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       <span class="icon-bar"></span>                       
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><b>Home</b></a></li>
+        <li><a href="#"><b>Category 01</b></a></li>
+        <li><a href="#"><b>Category 02</b></a></li>
+        <li><a href="#"><b>Category 03</b></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><b>About</b></a></li>
+        <li><a href="#"><b>Contact</b></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+       <form class="navbar-form navbar-left" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span><b>Search</b>
+            </button>
+          </span>        
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="form-group">
+          <label for="sel1-left">Sort by:</label>
+             <select class="form-control-right" id="sel1">
+               <option>Price : Low</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+             </select>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <p><a href="#"><b>Top Sellers</b></a></p>
+        <p><a href="#"><b>Under $5</b></a></p>
+        <p><a href="#"><b>Offer of the day</b></a></p>
+        <p><a href="#"><b>Watch list</b></a></p>
+      </div>
+       <div class="well">
+      <label for="sel1-left">Price range:</label>
+      <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+<div class="form-group">
+          <label for="sel1">Shipping:</label>
+             <select class="form-control" id="sel1">
+               <option>Free</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+             </select>
+        </div>
+    </div>
+       <div class="well">
+      <p><b>Recently viewed items</b></p>
+      <p><a href="">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+    <div class="well">
+      <p><a href="">Link</a></p>
+      <p><a href="">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+  </div>
+  <h4><b>Featured Products</h4>
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="grey-box"><img src="bird.jpg" class="img-square" height="150" width="150" alt="Avatar">
+        <p><a href="#">Product XXX</a></p>
+        <p><a href="#">Product Description</a></p>
+      <div class ="btn-right">
+        <button type="button" class="btn btn-default">Add to cart</button>
+        </div>
+      </div>
+   </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="grey-box"><img src="bird.jpg" class="img-square" height="150" width="150" alt="Avatar">
+        <p><a href="#">Product XXX</a></p>
+        <p><a href="#">Product Description</a></p>
+      <div class ="btn-right">
+        <button type="button" class="btn btn-default">Add to cart</button>
+        </div>
+      </div>
+   </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="grey-box"><img src="bird.jpg" class="img-square" height="150" width="150" alt="Avatar">
+        <p><a href="#">Product XXX</a></p>
+        <p><a href="#">Product Description</a></p>
+      <div class ="btn-right">
+        <button type="button" class="btn btn-default">Add to cart</button>
+        </div>
+      </div>
+   </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="grey-box"><img src="bird.jpg" class="img-square" height="150" width="150" alt="Avatar">
+        <p><a href="#">Product XXX</a></p>
+        <p><a href="#">Product Description</a></p>
+      <div class ="btn-right">
+        <button type="button" class="btn btn-default">Add to cart</button>
+        </div>
+      </div>
+   </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="grey-box"><img src="bird.jpg" class="img-square" height="150" width="150" alt="Avatar">
+        <p><a href="#">Product XXX</a></p>
+        <p><a href="#">Product Description</a></p>
+      <div class ="btn-right">
+        <button type="button" class="btn btn-default">Add to cart</button>
+        </div>
+      </div>
+   </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="grey-box"><img src="bird.jpg" class="img-squaresquare" height="150" width="150" alt="Avatar">
+        <p><a href="#">Product XXX</a></p>
+        <p><a href="#">Product Description</a></p>
+      <div class ="btn-right">
+        <button type="button" class="btn btn-default">Add to cart</button>
+        </div>
+      </div>
+   </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="grey-box"><img src="bird.jpg" class="img-squaresquaresquare" height="150" width="150" alt="Avatar">
+        <p><a href="#">Product XXX</a></p>
+        <p><a href="#">Product Description</a></p>
+      <div class ="btn-right">
+        <button type="button" class="btn btn-default">Add to cart</button>
+        </div>
+      </div>
+   </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="grey-box"><img src="bird.jpg" class="img-square" height="150" width="150" alt="Avatar">
+        <p><a href="#">Product XXX</a></p>
+        <p><a href="#">Product Description</a></p>
+      <div class ="btn-right">
+        <button type="button" class="btn btn-default">Add to cart</button>
+        </div>
+      </div>
+   </div>
+  </div>
+ </div>
+
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
